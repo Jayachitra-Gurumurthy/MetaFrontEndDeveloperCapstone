@@ -31,26 +31,26 @@ function Testimonials(props) {
                 <div class="card-body-testimonials ">
                    <div style={{display:'flex'}}>
                    <img src={item.imageSrc} className=' testimonial-img  m-3' alt='Logo'/>
-                    <p className='mt-5'> Rating  {displayStarRating(item.Rating)}  </p>
+                   <div> 
+                   <h5 class="card-title mt-5 text-danger">  {item.Name} </h5>
+                  <p class="card-text mt-5"> {item.Review}</p>
+                  <span className='m-3 text-success '>   {displayStarRating(item.Rating)}  </span>
                    </div>
-                   
-                  <h5 class="card-title m-3 text-danger">  {item.Name} </h5>
-                  <p class="card-text m-3"> {item.Review}</p>
-                  <h6 className='m-3 text-primary'> It means a lot to us !! Thanks a lot !! </h6>
-                 
+                   </div>
                 </div>
               </div>
               </div>  
                    :  <div class="carousel-item ">
              <div class="card card-testimonials mx-auto" >
-                <div class="card-body-testimonials ">
-                <div style={{display:'flex'}}>
+             <div class="card-body-testimonials ">
+                   <div style={{display:'flex'}}>
                    <img src={item.imageSrc} className=' testimonial-img  m-3' alt='Logo'/>
-                    <p className=' mt-5'> Rating  {displayStarRating(item.Rating)}  </p>
+                   <div> 
+                   <h5 class="card-title mt-5 text-danger">  {item.Name} </h5>
+                  <p class="card-text mt-5"> {item.Review}</p>
+                  <span className='m-3 text-success '>   {displayStarRating(item.Rating)}  </span>
                    </div>
-                  <h5 class="card-title m-3 text-danger">  {item.Name} </h5>
-                  <p class="card-text m-3"> {item.Review}</p>
-                 <h6 className='m-3 text-primary'> It means a lot to us !! Thanks a lot !! </h6>
+                   </div>
                 </div>
               </div>
               </div>

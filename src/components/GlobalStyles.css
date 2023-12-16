@@ -1,3 +1,60 @@
+
+/* Small Screens */
+
+@media only screen and (max-width: 800px) {
+   
+    .card-specials{
+        margin:3%;
+    }
+    .card-deck {
+      display: block;
+      margin:auto;
+      min-width:80%;
+    margin-bottom: 5%;
+  } 
+  .side-menu {
+    color:black;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  
+  }
+
+  @media (min-width:801px) and (max-width: 900px) {
+  .side-menu {
+    color:black;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+  /* larger Screens */
+  @media only screen and (min-width: 801px) {
+    .card-specials {
+        min-width:calc(30vw);
+        height:auto;
+        margin: 2%;
+    }
+  .card-deck {
+      margin:auto;
+      display: flex;
+      gap:10px;
+  }
+
+  .side-menu {
+    color:black;
+    text-decoration: none;
+    padding-top : 15%;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+  }
+
 .Header {
     /* background: #F4CE14;  */
     grid-area: head; 
@@ -12,17 +69,15 @@
 }
 
 ul li{
-    height: 8vh;   
+    height: 8vh; 
+   
     }
 
-    .hide {
-        display: none;
+    ul {
+        
+        padding:3%;
     }
 
-/* .AboutPage {
-    grid-area: main; 
-    margin: 2rem;
-} */
 .mainPage {
     grid-area: main;
     height: auto;
@@ -33,14 +88,7 @@ ul li{
     display: block;
     margin: auto;
 }
-.side-menu {
-    color:black;
-    text-decoration: none;
-    padding-top : 15%;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   
-}
+
 
 a:active {
    color: green;
@@ -81,22 +129,17 @@ span {
     padding-left : 20px;   
 }
 
-.card-specials{
-   
-   width: 30%;
-   height: 20%;
-   margin-left: 2rem; 
-   display: flex;
-   margin-bottom: 2rem;
-}
+
+
+
 
 .card-testimonials{
-   width: 50%;
+   width: 80%;
     margin:3 rem;
  }
 
  .card-body-testimonials {
-    height:70vh;
+    height:60vh;
     margin:3 rem;
 }
 .testimonial-img {
@@ -106,15 +149,8 @@ span {
     width:50%;
     
 }
-.card-deck {
-    display: flex;
-}
-.card-body-specials {
-    height:28vh;
-    margin-top: 1rem;
-    margin-left: 1rem;
-   
-}
+
+
 
 .card-img-top {
     width: 100%;
@@ -147,7 +183,7 @@ height: auto;
 }
 
 .carousel-control-prev {
-    left:20%;
+    left:10%;
 }
 
 .carousel-control-right {

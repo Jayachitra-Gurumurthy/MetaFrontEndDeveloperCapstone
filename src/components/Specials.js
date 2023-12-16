@@ -34,8 +34,9 @@ function Specials() {
     const displayCard =  MenuData.map((item) => 
         <div className="card card-specials">
         <img src={item.imageSrc} className="card-img-top" alt="..." />
-        <div className="card-body-specials">
-         <div style={{display:'flex'}}>  <h5 className="card-title">{item.Name}</h5> <p style={{color:'red', marginLeft:'2rem'}}>{item.Price} </p> </div> 
+        <div className="card-body bg-white">
+         <div style={{display:'flex',width:'inherit'}}>  <h5 className="card-title">{item.Name}</h5>
+          <p style={{color:'red', marginLeft:'2rem'}}>{item.Price} </p> </div> 
           <p className="card-text"> {item.Description} </p>
         </div>
         <button className="btn btn-outline-primary center mb-2" style={{width:'60%'}} onClick={() => {setShowModal(true);}}> Order Now  <FontAwesomeIcon icon={faCartShopping} />  </button>

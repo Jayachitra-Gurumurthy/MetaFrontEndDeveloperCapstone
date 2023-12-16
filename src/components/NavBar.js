@@ -8,7 +8,7 @@ function NavBar() {
 return (
        <>
       
-       <div className = {HideMenu ? 'bg-warning hide': 'bg-warning'} >
+       <div className = 'bg-warning' >
      
         <ul className='NavList'> 
         <li>   <Link className='side-menu' to="/Home">Home</Link> </li>
